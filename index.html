@@ -21,15 +21,15 @@
 <body class="">
     <main class="min-h-screen bg-[#010313] text-white bg-[url(images/background.png)] bg-no-repeat bg-center">
         <!-- home screen -->
-        <section class="home min-h-screen flex flex-col justify-center items-center align-middle">
+        <section id="home-section" class="home min-h-screen flex flex-col justify-center items-center align-middle">
             <div class="flex flex-col justify-center items-center  gap-10">
                 <h1 class="text-8xl anton-sc-regular ">Alpha Clash Pro</h1>
                 <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn btn-sm sm:btn-sm md:btn-md lg:btn-lg px-10 py-2">Play</button>
+                <button onclick="play()" id="btn-play" class="btn btn-sm sm:btn-sm md:btn-md lg:btn-lg px-10 py-2">Play</button>
             </div>
         </section>
         <!-- playground start -->
-        <section class="play-ground hidden">
+        <section id="play-ground" class="hidden">
             <div class="flex flex-col justify-center items-center">
                 <!-- screen -->
                 <div
@@ -107,7 +107,7 @@
         </section>
     </main>
 
-
+    <script src="js/utility.js"></script>
     <script src="js/file.js"></script>
     <script src="js/tailwind.config.js"></script>
 </body>
